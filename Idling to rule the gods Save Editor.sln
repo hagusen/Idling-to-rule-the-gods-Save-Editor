@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Idling to rule the gods Save Editor", "Idling to rule the gods Save Editor\Idling to rule the gods Save Editor.csproj", "{7B3315F9-30F5-46B5-B4EA-79BB9CD6DDE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectListView2012", "Idling to rule the gods Save Editor\ObjectListView\ObjectListView\ObjectListView2012.csproj", "{18FEDA0C-D147-4286-B39A-01204808106A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B3315F9-30F5-46B5-B4EA-79BB9CD6DDE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B3315F9-30F5-46B5-B4EA-79BB9CD6DDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B3315F9-30F5-46B5-B4EA-79BB9CD6DDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B3315F9-30F5-46B5-B4EA-79BB9CD6DDE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18FEDA0C-D147-4286-B39A-01204808106A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18FEDA0C-D147-4286-B39A-01204808106A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18FEDA0C-D147-4286-B39A-01204808106A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18FEDA0C-D147-4286-B39A-01204808106A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5445555F-5EF9-46EE-B171-0F9A4238AE45}
+	EndGlobalSection
+EndGlobal

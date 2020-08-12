@@ -1,0 +1,473 @@
+Conv.AppendValue(builder, "a", this.Divinity.Serialize());
+      Conv.AppendValue(builder, "b", this.CurrentHealth.Serialize());
+      Conv.AppendValue(builder, "c", this.TimeStampGameClosed);
+      Conv.AppendValue(builder, "d", this.CreatingPower.Serialize());
+      Conv.AppendValue(builder, "e", this.Clones.Serialize());
+>
+      Conv.AppendValue(builder, "a", this.count.Serialize());
+      Conv.AppendValue(builder, "b", this.InUse.Serialize());
+      Conv.AppendValue(builder, "c", this.TotalClonesCreated.Serialize());
+      Conv.AppendValue(builder, "d", this.TotalClonesKilled.Serialize());
+      Conv.AppendValue(builder, "e", this.maxShadowClones.Serialize());
+      Conv.AppendValue(builder, "f", this.AbsoluteMaximum.Serialize());
+      Conv.AppendValue(builder, "g", this.MaxCloneModifier.Serialize());
+<
+      Conv.AppendValue(builder, "g", this.Title);
+      Conv.AppendList<Training>(builder, this.AllTrainings, "h");
+>
+"list" this..
+>
+      Conv.AppendValue(builder, "a", this.EnumValue);
+      Conv.AppendValue(builder, "b", this.Level.Serialize());
+      Conv.AppendValue(builder, "c", this.ShadowCloneCount.Serialize());
+      Conv.AppendValue(builder, "d", this.CurrentDuration);
+<<
+      Conv.AppendList<Creation>(builder, this.AllCreations, "i");
+>
+"list" this..
+>
+ 	Conv.AppendValue(builder, "a", (int) this.TypeEnum);
+      Conv.AppendValue(builder, "b", this.GodToDefeat.Serialize());
+>
+      Conv.AppendValue(builder, "a", (int) this.TypeEnum);
+      Conv.AppendValue(builder, "b", this.IsDefeated.ToString());
+      Conv.AppendValue(builder, "f", this.CurrentHealth.Serialize());
+      Conv.AppendValue(builder, "g", this.IsDefeatedForFirstTime.ToString());
+      Conv.AppendValue(builder, "h", this.IsDefeatedPetChallenge.ToString());
+<
+      Conv.AppendValue(builder, "d", this.Count.Serialize());
+      Conv.AppendValue(builder, "e", this.currentDuration.ToString());
+      Conv.AppendValue(builder, "f", this.IsActive.ToString());
+      Conv.AppendValue(builder, "g", this.TotalCreated.Serialize());
+      Conv.AppendValue(builder, "h", this.CanBuy.ToString());
+      Conv.AppendValue(builder, "i", this.NextAtCount);
+      Conv.AppendValue(builder, "j", this.AutoBuy.ToString());
+<<
+      Conv.AppendList<Skill>(builder, this.AllSkills, "j");
+>
+"list" this..
+>
+      Conv.AppendValue(builder, "a", this.EnumValue);
+      Conv.AppendValue(builder, "b", this.Level.Serialize());
+      Conv.AppendValue(builder, "c", this.ShadowCloneCount.Serialize());
+      Conv.AppendValue(builder, "d", this.CurrentDuration);
+      Conv.AppendValue(builder, "e", this.Extension.Serialize());
+>
+      Conv.AppendValue(builder, "a", this.SkillId.ToString());
+      Conv.AppendValue(builder, "b", this.UsageCount.Serialize());
+      Conv.AppendValue(builder, "c", (int) this.KeyPress);
+<<<
+      Conv.AppendList<Fight>(builder, this.AllFights, "k");
+>
+"list" this..
+>
+      Conv.AppendValue(builder, "a", this.EnumValue);
+      Conv.AppendValue(builder, "b", this.Level.Serialize());
+      Conv.AppendValue(builder, "c", this.ShadowCloneCount.Serialize());
+      Conv.AppendValue(builder, "d", this.CurrentDuration);
+<<
+      Conv.AppendValue(builder, "l", this.CloneAttackDivider);
+      Conv.AppendValue(builder, "m", this.CloneDefenseDivider);
+      Conv.AppendValue(builder, "n", this.CloneHealthDivider);
+      Conv.AppendValue(builder, "o", this.Multiplier.Serialize());
+>
+      Conv.AppendValue(builder, "a", this.AchievementMultiPhysical.Serialize());
+      Conv.AppendValue(builder, "b", this.AchievementMultiMystic.Serialize());
+      Conv.AppendValue(builder, "c", this.AchievementMultiBattle.Serialize());
+      Conv.AppendValue(builder, "d", this.AchievementMultiCreating.Serialize());
+      Conv.AppendValue(builder, "e", this.AchievementMultiPhysicalRebirth.Serialize());
+      Conv.AppendValue(builder, "f", this.AchievementMultiMysticRebirth.Serialize());
+      Conv.AppendValue(builder, "g", this.AchievementMultiBattleRebirth.Serialize());
+      Conv.AppendValue(builder, "h", this.AchievementMultiCreatingRebirth.Serialize());
+      Conv.AppendValue(builder, "i", this.GodMultiFromRebirth.Serialize());
+      Conv.AppendValue(builder, "j", this.MonumentMultiPhysical.Serialize());
+      Conv.AppendValue(builder, "k", this.MonumentMultiMystic.Serialize());
+      Conv.AppendValue(builder, "l", this.MonumentMultiBattle.Serialize());
+      Conv.AppendValue(builder, "m", this.MonumentMultiCreating.Serialize());
+      Conv.AppendValue(builder, "n", this.MonumentMultiPhysicalRebirth.Serialize());
+      Conv.AppendValue(builder, "o", this.MonumentMultiMysticRebirth.Serialize());
+      Conv.AppendValue(builder, "p", this.MonumentMultiBattleRebirth.Serialize());
+      Conv.AppendValue(builder, "q", this.MonumentMultiCreatingRebirth.Serialize());
+      Conv.AppendValue(builder, "r", this.DrawMultiPhysical.Serialize());
+      Conv.AppendValue(builder, "s", this.DrawMultiMystic.Serialize());
+      Conv.AppendValue(builder, "t", this.DrawMultiBattle.Serialize());
+      Conv.AppendValue(builder, "u", this.DrawMultiCreating.Serialize());
+      Conv.AppendValue(builder, "v", this.PetCampainBoost.Serialize());
+      Conv.AppendValue(builder, "w", this.PetCampainBoostRebirth.Serialize());
+<
+      Conv.AppendValue(builder, "p", this.PremiumBoni.Serialize());
+>
+	Conv.AppendValue(builder, "a", this.GodlyLiquidDuration);
+      Conv.AppendValue(builder, "b", this.GodlyLiquidCount.Serialize());
+      Conv.AppendValue(builder, "c", this.ChakraPillDuration);
+      Conv.AppendValue(builder, "d", this.ChakraPillCount.Serialize());
+      Conv.AppendValue(builder, "e", this.UltimateShadowSummonCount);
+      Conv.AppendValue(builder, "f", this.TotalItemsBought);
+      Conv.AppendValue(builder, "g", this.ItemToPurchase);
+      Conv.AppendValue(builder, "h", this.creatingSpeedUpPercent.Serialize());
+      Conv.AppendValue(builder, "i", this.buildingSpeedUpPercent.Serialize());
+      Conv.AppendValue(builder, "j", this.GodPower);
+      Conv.AppendValue(builder, "k", this.HasPurchasedGodPowerOnce.ToString());
+      Conv.AppendValue(builder, "l", this.HasObtainedFreeGodPower.ToString());
+      Conv.AppendValue(builder, "m", this.GodlyLiquidV2Count.Serialize());
+      Conv.AppendValue(builder, "n", this.ChakraPillV2Count.Serialize());
+      Conv.AppendValue(builder, "o", this.GodlyLiquidV2InUse.ToString());
+      Conv.AppendValue(builder, "p", this.ChakraPillV2InUse.ToString());
+      Conv.AppendValue(builder, "q", this.creationCountBoni.Serialize());
+      Conv.AppendValue(builder, "r", this.GpBoniPhysicalPerc.Serialize());
+      Conv.AppendValue(builder, "s", this.GpBoniMysticPerc.Serialize());
+      Conv.AppendValue(builder, "t", this.GpBoniBattlePerc.Serialize());
+      Conv.AppendValue(builder, "u", this.GpBoniCreatingPerc.Serialize());
+      Conv.AppendValue(builder, "v", this.TotalGodPowerSpent);
+      Conv.AppendValue(builder, "w", this.AutoBuyCostReduction);
+      Conv.AppendValue(builder, "x", this.GodPowerMod);
+      Conv.AppendValue(builder, "y", this.TbsMissreduction);
+      Conv.AppendValue(builder, "z", this.TbsProgressAfterRebirth);
+      Conv.AppendValue(builder, "B", this.ImprovedNextAt.ToString());
+      Conv.AppendValue(builder, "C", this.StatisticMulti.Serialize());
+      Conv.AppendValue(builder, "D", this.TbsExtraPixels);
+      Conv.AppendValue(builder, "E", this.TbsDoublePoints);
+      Conv.AppendValue(builder, "F", this.TotalMight.Serialize());
+      Conv.AppendValue(builder, "G", this.TotalMightIsUnlocked.ToString());
+      Conv.AppendValue(builder, "H", this.HasUnlimitedGenderChange.ToString());
+      Conv.AppendValue(builder, "I", this.PetToken.Serialize());
+      Conv.AppendValue(builder, "J", this.BoughtLimitedPetToken.ToString());
+      Conv.AppendValue(builder, "K", this.LuckyDraws.Serialize());
+      Conv.AppendValue(builder, "L", this.TimeForNextLuckyDraw.Serialize());
+      Conv.AppendValue(builder, "M", this.TotalLuckyDrawCount);
+      Conv.AppendValue(builder, "N", this.GPFromLuckyDraws.Serialize());
+      Conv.AppendValue(builder, "O", this.OrderIdLastSteamPurchase.ToString());
+      Conv.AppendValue(builder, "P", (int) this.ItemIdToPurchase);
+      Conv.AppendValue(builder, "Q", this.GodPowerBought.Serialize());
+      Conv.AppendValue(builder, "R", this.SteamPurchasedOrderIds);
+      Conv.AppendValue(builder, "S", this.TimeForNextDailyPack);
+      Conv.AppendValue(builder, "T", this.DailyPackDays.Serialize());
+      Conv.AppendValue(builder, "U", this.ChallengeImprovedNextAt.ToString());
+      Conv.AppendValue(builder, "V", this.PetFoodAfterRebirth.ToString());
+      Conv.AppendValue(builder, "W", this.AndroidPurchasedOrderIds);
+      Conv.AppendValue(builder, "X", this.CanShowAlerts.ToString());
+      Conv.AppendValue(builder, "Y", this.HasPetHalfStats.ToString());
+      Conv.AppendValue(builder, "Z", this.HasCrystalImprovement.ToString());
+      Conv.AppendValue(builder, NS.n1.Nr(), this.MaxCrystals.Serialize());
+      Conv.AppendValue(builder, NS.n2.Nr(), this.CrystalPower.Serialize());
+      Conv.AppendValue(builder, NS.n3.Nr(), this.GodPowerFromCrystals.Serialize());
+      Conv.AppendValue(builder, NS.n4.Nr(), this.CrystalGPTimeCurrent.Serialize());
+      Conv.AppendValue(builder, NS.n5.Nr(), this.GodPowerFromPets.Serialize());
+      Conv.AppendValue(builder, NS.n6.Nr(), this.HasAutoSelectPets.ToString());
+      Conv.AppendValue(builder, NS.n7.Nr(), this.DrawsUsedSinceFreeDraw.Serialize());
+      Conv.AppendValue(builder, NS.n8.Nr(), this.HasCustomHalfStats.ToString());
+      Conv.AppendValue(builder, NS.n9.Nr(), this.Candies.Serialize());
+      Conv.AppendValue(builder, NS.n10.Nr(), this.HasImprovedCampaigns.ToString());
+      Conv.AppendValue(builder, NS.n11.Nr(), this.HasPreselectMight.ToString());
+      Conv.AppendValue(builder, NS.n12.Nr(), this.DailyAdPacks.Serialize());
+      Conv.AppendValue(builder, NS.n13.Nr(), this.TimeForNextAdPack.Serialize());
+      Conv.AppendValue(builder, NS.n14.Nr(), this.DollarsPurchaseValue.Serialize());
+      Conv.AppendValue(builder, NS.n15.Nr(), this.EasterEggs.Serialize());
+      Conv.AppendValue(builder, NS.n16.Nr(), this.MaxPetTeams.Serialize());
+      Conv.AppendValue(builder, NS.n17.Nr(), this.PetDungeonDropBonus.Serialize());
+      Conv.AppendValue(builder, NS.n18.Nr(), this.MaxEquipSlots.Serialize());
+      Conv.AppendValue(builder, NS.n19.Nr(), this.PetDungeonExpBonus.Serialize());
+      Conv.AppendValue(builder, NS.n20.Nr(), this.PetDungeonCraftingBonus.Serialize());
+      Conv.AppendValue(builder, NS.n21.Nr(), this.PetDungeonItemSlots.Serialize());
+      Conv.AppendValue(builder, NS.n22.Nr(), this.Clover.Serialize());
+      Conv.AppendValue(builder, NS.n23.Nr(), this.ClassChangeToken.Serialize());
+      Conv.AppendValue(builder, NS.n24.Nr(), this.AfkyMaxMulti);
+<
+      Conv.AppendValue(builder, "q", this.ShouldSubmitScore.ToString());
+      Conv.AppendValue(builder, "r", this.KongUserId);
+      Conv.AppendValue(builder, "s", this.KongUserName);
+      Conv.AppendValue(builder, "t", this.IsTutorialShown.ToString());
+      Conv.AppendValue(builder, "u", this.IsGuestMsgShown.ToString());
+      Conv.AppendValue(builder, "x", this.Statistic.Serialize());
+>
+      Conv.AppendValue(builder, "a", this.TimePlayed);
+      Conv.AppendValue(builder, "b", this.TimeOffline);
+      Conv.AppendValue(builder, "c", this.TotalTrainingLevels.Serialize());
+      Conv.AppendValue(builder, "d", this.TotalSkillLevels.Serialize());
+      Conv.AppendValue(builder, "e", this.TotalEnemiesDefeated.Serialize());
+      Conv.AppendValue(builder, "f", this.TotalCreations.Serialize());
+      Conv.AppendValue(builder, "g", this.TotalShadowClonesCreated.Serialize());
+      Conv.AppendValue(builder, "h", this.TotalShadowClonesDied.Serialize());
+      Conv.AppendValue(builder, "i", this.TotalGodsDefeated.Serialize());
+      Conv.AppendValue(builder, "j", this.TotalDivinitySpent.Serialize());
+      Conv.AppendValue(builder, "k", this.TotalRebirths.Serialize());
+      Conv.AppendValue(builder, "l", this.MonumentsCreated.Serialize());
+      Conv.AppendValue(builder, "m", this.TotalAchievements.Serialize());
+      Conv.AppendValue(builder, "n", this.HighestGodDefeated.Serialize());
+      Conv.AppendValue(builder, "o", this.TotalUpgrades.Serialize());
+      Conv.AppendValue(builder, "p", this.MostDefeatedShadowClones.Serialize());
+      Conv.AppendValue(builder, "q", this.TimePlayedSinceRebirth);
+      Conv.AppendValue(builder, "r", this.TBSScore.Serialize());
+      Conv.AppendValue(builder, "s", this.UBsDefeated.Serialize());
+      Conv.AppendValue(builder, "t", this.GodlyShootScore.Serialize());
+      Conv.AppendValue(builder, "u", this.TotalPowersurge.Serialize());
+      Conv.AppendValue(builder, "v", this.HasStartedDoubleRebirthChallenge);
+      Conv.AppendValue(builder, "w", this.DoubleRebirthChallengesFinished.Serialize());
+      Conv.AppendValue(builder, "y", this.FastestDRCallenge.Serialize());
+      Conv.AppendValue(builder, "z", this.HasStartedUltimateBaalChallenge);
+      Conv.AppendValue(builder, "A", this.UltimateBaalChallengesFinished.Serialize());
+      Conv.AppendValue(builder, "B", this.PresetBoolean);
+      Conv.AppendValue(builder, "C", this.FastestUBCallenge.Serialize());
+      Conv.AppendValue(builder, "D", this.PremiumStatsBeforeUBCChallenge);
+      Conv.AppendValue(builder, "E", this.AbsoluteMaxClonesBeforeUBCChallenge.Serialize());
+      Conv.AppendValue(builder, "F", this.MaxClonesBeforeUBCChallenge.Serialize());
+      Conv.AppendValue(builder, "G", this.HasStartedUniverseChallenge);
+      Conv.AppendValue(builder, "H", this.UniverseChallengesFinished.Serialize());
+      Conv.AppendValue(builder, "J", this.FastestUUCallenge.Serialize());
+      Conv.AppendValue(builder, "K", this.HasStartedArtyChallenge);
+      Conv.AppendValue(builder, "L", this.ArtyChallengesFinished.Serialize());
+      Conv.AppendValue(builder, "N", this.FastestUACallenge.Serialize());
+      Conv.AppendValue(builder, "O", this.RebirthsAfterUAC.Serialize());
+      Conv.AppendValue(builder, "P", this.SkillUsageCountBeforeUAC);
+      Conv.AppendValue(builder, "Q", this.RebirthsAfterChallenge.Serialize());
+      Conv.AppendValue(builder, "R", this.HighestGodInUAC.Serialize());
+      Conv.AppendValue(builder, "S", this.MinRebirthsAfterUAC.Serialize());
+      Conv.AppendValue(builder, "T", this.MinRebirthsAfterUBC.Serialize());
+      Conv.AppendValue(builder, "W", this.RandomDividerLastRebirth.Serialize());
+      Conv.AppendList<CDouble>(builder, this.Last5RebirthTimes, "X");
+      Conv.AppendValue(builder, NS.n1.Nr(), this.HasStartedAchievementChallenge);
+      Conv.AppendValue(builder, NS.n2.Nr(), this.AchievementChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n3.Nr(), this.HasStarted1kChallenge);
+      Conv.AppendValue(builder, NS.n4.Nr(), this.OnekChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n7.Nr(), this.Fastest1KCCallenge.Serialize());
+      Conv.AppendValue(builder, NS.n8.Nr(), this.CreatorBeaten);
+      Conv.AppendValue(builder, NS.n9.Nr(), this.GodlyShootScoreBoss.Serialize());
+      Conv.AppendList<SteamAndroidAchievement>(builder, this.ReachedAndroidAchievements, NS.n10.Nr());
+      Conv.AppendValue(builder, NS.n11.Nr(), this.GPFromBlackHole.Serialize());
+      Conv.AppendValue(builder, NS.n12.Nr(), this.GPFromBlackHoleUpgrade.Serialize());
+      Conv.AppendValue(builder, NS.n13.Nr(), this.AfkyClonesKilled.Serialize());
+      Conv.AppendValue(builder, NS.n14.Nr(), this.BlackHoleGPTimer.Serialize());
+      Conv.AppendValue(builder, NS.n15.Nr(), this.AfkyGodPower.Serialize());
+      Conv.AppendValue(builder, NS.n16.Nr(), this.HasStartedNoRbChallenge);
+      Conv.AppendValue(builder, NS.n17.Nr(), this.NoRbChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n19.Nr(), this.FastestNoRbCCallenge.Serialize());
+      Conv.AppendValue(builder, NS.n20.Nr(), this.HasReceivedAdditionalCBCReward);
+      Conv.AppendValue(builder, NS.n21.Nr(), this.GodDefeatedBeforeRebirth);
+      Conv.AppendValue(builder, NS.n22.Nr(), this.TimeUntilNextChocolate);
+      Conv.AppendValue(builder, NS.n23.Nr(), this.PresentCount.Serialize());
+      Conv.AppendValue(builder, NS.n24.Nr(), this.HasStartedBlackHoleChallenge);
+      Conv.AppendValue(builder, NS.n25.Nr(), this.BlackHoleChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n27.Nr(), this.FastestBHCallenge.Serialize());
+      Conv.AppendValue(builder, NS.n28.Nr(), this.HasStartedUltimatePetChallenge);
+      Conv.AppendValue(builder, NS.n29.Nr(), this.UltimatePetChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n30.Nr(), this.TimeAfterChallengeStarted.Serialize());
+      Conv.AppendValue(builder, NS.n31.Nr(), this.FastestUPCallenge.Serialize());
+      Conv.AppendValue(builder, NS.n32.Nr(), this.HasStartedNoDivChallenge);
+      Conv.AppendValue(builder, NS.n33.Nr(), this.NoDivChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n34.Nr(), this.FastestNoDivChallenge.Serialize());
+      Conv.AppendValue(builder, NS.n35.Nr(), this.HasStartedPlanetMultiChallenge);
+      Conv.AppendValue(builder, NS.n36.Nr(), this.PlanetMultiChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n37.Nr(), this.FastestPlanetMultiChallenge.Serialize());
+      Conv.AppendValue(builder, NS.n38.Nr(), this.HasStartedGodSkipChallenge);
+      Conv.AppendValue(builder, NS.n39.Nr(), this.GodSkipChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n40.Nr(), this.PresentsReceived.Serialize());
+      Conv.AppendValue(builder, NS.n41.Nr(), this.HasReachedMaxBaal);
+      Conv.AppendValue(builder, NS.n42.Nr(), this.GPHourTimer.Serialize());
+      Conv.AppendValue(builder, NS.n43.Nr(), this.GPHour.Serialize());
+      Conv.AppendValue(builder, NS.n44.Nr(), this.DayBaalChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n45.Nr(), this.HighestBaalOneDay.Serialize());
+      Conv.AppendValue(builder, NS.n46.Nr(), this.DayUniverseChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n47.Nr(), this.HighestUniversesOneDay.Serialize());
+      Conv.AppendValue(builder, NS.n48.Nr(), this.DayPetChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n49.Nr(), this.HighestPetMultiOneDay.Serialize());
+      Conv.AppendValue(builder, NS.n50.Nr(), this.CloneBuildupChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n51.Nr(), this.FastestCloneBuildupChallenge.Serialize());
+      Conv.AppendValue(builder, NS.n52.Nr(), (int) this.Challenge);
+      Conv.AppendValue(builder, NS.n53.Nr(), this.DivGainedSinceRebirth.Serialize());
+      Conv.AppendValue(builder, NS.n54.Nr(), this.DivGainedSinceRebirthBought.Serialize());
+      Conv.AppendValue(builder, NS.n55.Nr(), this.CrystalPowerChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n56.Nr(), this.CrystalPowerGainedInChallenge.Serialize());
+      Conv.AppendValue(builder, NS.n57.Nr(), this.TimeSinceBackupSave);
+      Conv.AppendValue(builder, NS.n58.Nr(), this.PBaalChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n59.Nr(), this.DayNoDivChallengeMonuments.Serialize());
+      Conv.AppendValue(builder, NS.n60.Nr(), this.UltimateChallengeChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n61.Nr(), this.UCCStatisticMulti.Serialize());
+      Conv.AppendValue(builder, NS.n62.Nr(), this.OneKBlackHoleChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n63.Nr(), this.FastestOneKBlackHoleChallenge.Serialize());
+      Conv.AppendValue(builder, NS.n64.Nr(), this.DayMightChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n65.Nr(), this.HighestMightOneDay.Serialize());
+      Conv.AppendValue(builder, NS.n66.Nr(), this.DMCMightGained.Serialize());
+      Conv.AppendValue(builder, NS.n67.Nr(), this.DayNoDivinityChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n68.Nr(), this.HighestDayNoDivPoints.Serialize());
+      Conv.AppendValue(builder, NS.n69.Nr(), this.HasStartedUCC);
+      Conv.AppendList<ChallengeType>(builder, this.ChallengesFinishedInUCC, NS.n70.Nr());
+      Conv.AppendValue(builder, NS.n71.Nr(), this.LuckyDrawsOpened.Serialize());
+      Conv.AppendValue(builder, NS.n72.Nr(), this.ICEScore.Serialize());
+      Conv.AppendValue(builder, NS.n73.Nr(), this.CPHourTimer.Serialize());
+      Conv.AppendValue(builder, NS.n74.Nr(), this.CPHour.Serialize());
+      Conv.AppendValue(builder, NS.n76.Nr(), flag.ToString());
+      Conv.AppendValue(builder, NS.n77.Nr(), this.TotalFoundCandies.Serialize());
+      Conv.AppendValue(builder, NS.n78.Nr(), this.DungeonBossesDefeated.Serialize());
+      Conv.AppendValue(builder, NS.n79.Nr(), this.DungeonMonstersDefeated.Serialize());
+      Conv.AppendValue(builder, NS.n80.Nr(), this.DungeonRoomsBeaten.Serialize());
+      Conv.AppendValue(builder, NS.n81.Nr(), this.SaveVersionsNumber);
+      Conv.AppendValue(builder, NS.n82.Nr(), this.BoughtPetStones.Serialize());
+      Conv.AppendValue(builder, NS.n83.Nr(), this.Depth2DungeonsBeaten);
+      Conv.AppendValue(builder, NS.n84.Nr(), this.FreeCCTokensReceived);
+      Conv.AppendValue(builder, NS.n86.Nr(), this.Triggertimer.Serialize());
+      Conv.AppendValue(builder, NS.n87.Nr(), this.BoughtKongItems);
+      Conv.AppendValue(builder, NS.n88.Nr(), this.Trigger.Serialize());
+      Conv.AppendValue(builder, NS.n89.Nr(), this.ChocoBearHours.Serialize());
+      Conv.AppendValue(builder, NS.n90.Nr(), this.Depth2ChameleonMet);
+      Conv.AppendValue(builder, NS.n91.Nr(), this.ManualSaveDone);
+      Conv.AppendValue(builder, NS.n92.Nr(), this.TotalMightChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n93.Nr(), this.TotalMightBeforeChallenge.Serialize());
+      Conv.AppendValue(builder, NS.n94.Nr(), this.HasDefeatedITRTGV2OneHit);
+      Conv.AppendValue(builder, NS.n95.Nr(), this.NoRebirthDungeonChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n96.Nr(), this.MonumentMultiChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n97.Nr(), this.CheckedMaxMMCs);
+      Conv.AppendValue(builder, NS.n98.Nr(), this.TotalDamageLuckyCoin.Serialize());
+      Conv.AppendValue(builder, NS.n99.Nr(), this.BoughtEventPetToken);
+      Conv.AppendValue(builder, NS.n100.Nr(), this.EvenItems.Serialize());
+      Conv.AppendValue(builder, NS.n101.Nr(), this.DungeonChallenges.Serialize());
+>
+Conv.AppendValue(builder, "a", this.ElementalChallenges.SerializeRounded());
+      Conv.AppendValue(builder, "b", this.MaxPointsElemental.SerializeRounded());
+      Conv.AppendValue(builder, "c", this.ChallengesNeutral.SerializeRounded());
+      Conv.AppendValue(builder, "d", this.MaxPointsNeutral.SerializeRounded());
+      Conv.AppendValue(builder, "e", this.ChallengesWater.SerializeRounded());
+      Conv.AppendValue(builder, "f", this.MaxPointsWater.SerializeRounded());
+      Conv.AppendValue(builder, "g", this.ChallengesFire.SerializeRounded());
+      Conv.AppendValue(builder, "h", this.MaxPointsFire.SerializeRounded());
+      Conv.AppendValue(builder, "i", this.ChallengesWind.SerializeRounded());
+      Conv.AppendValue(builder, "j", this.MaxPointsWind.SerializeRounded());
+      Conv.AppendValue(builder, "k", this.ChallengesEarth.SerializeRounded());
+      Conv.AppendValue(builder, "l", this.MaxPointsEarth.SerializeRounded());
+      Conv.AppendValue(builder, "m", this.TotalPointsReceived.SerializeRounded());
+<
+      Conv.AppendValue(builder, NS.n102.Nr(), this.EvenItemsTotal.Serialize());
+      Conv.AppendValue(builder, NS.n103.Nr(), this.SpaceDimChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n104.Nr(), this.UBV2ChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n105.Nr(), this.SaveVersionsName);
+      Conv.AppendValue(builder, NS.n106.Nr(), this.LCHourTimer.Serialize());
+      Conv.AppendValue(builder, NS.n107.Nr(), this.LCHour.Serialize());
+      Conv.AppendValue(builder, NS.n108.Nr(), this.FastestITRTGV4Defeat.Serialize());
+      Conv.AppendValue(builder, NS.n109.Nr(), this.HasChocoBearImprovement);
+      Conv.AppendValue(builder, NS.n110.Nr(), this.NoDivMonumentChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n111.Nr(), this.CoronaTime.Serialize());
+      Conv.AppendValue(builder, NS.n112.Nr(), this.TotalSickPets.Serialize());
+      Conv.AppendValue(builder, NS.n113.Nr(), this.HasCoronaImprovement);
+      Conv.AppendValue(builder, NS.n114.Nr(), this.OverflowChallengesFinished.Serialize());
+      Conv.AppendValue(builder, NS.n115.Nr(), this.OverflowMaxPoints.Serialize());
+      Conv.AppendValue(builder, NS.n116.Nr(), this.OverflowPoints.Serialize());
+      Conv.AppendValue(builder, NS.n117.Nr(), this.OverflowPointsSpent.Serialize());
+      Conv.AppendValue(builder, NS.n118.Nr(), this.FoxStones.Serialize());
+      Conv.AppendValue(builder, NS.n119.Nr(), this.TotalCardBattleScore.Serialize());
+      Conv.AppendValue(builder, NS.n120.Nr(), this.TotalCardBattlesWon.Serialize());
+      Conv.AppendValue(builder, NS.n121.Nr(), this.TotalCardBattlesLost.Serialize());
+      Conv.AppendValue(builder, NS.n122.Nr(), this.CardTradingPoints.Serialize());
+      Conv.AppendValue(builder, NS.n123.Nr(), this.CardTradingPointsSpentToday.Serialize());
+      Conv.AppendValue(builder, NS.n124.Nr(), this.GPBonusBeforeResetChallenge.Serialize());
+      Conv.AppendValue(builder, NS.n125.Nr(), this.GpMissingInResetChallenge.Serialize());
+      Conv.AppendValue(builder, NS.n126.Nr(), this.GrowthHourTimer.Serialize());
+      Conv.AppendValue(builder, NS.n127.Nr(), this.GrowthHour.Serialize());
+      Conv.AppendValue(builder, NS.n128.Nr(), this.MightHourTimer.Serialize());
+      Conv.AppendValue(builder, NS.n129.Nr(), this.MightHour.Serialize());
+      Conv.AppendValue(builder, NS.n130.Nr(), this.PetStonesHourTimer.Serialize());
+      Conv.AppendValue(builder, NS.n131.Nr(), this.PetStonesHour.Serialize());
+      Conv.AppendValue(builder, NS.n132.Nr(), this.BeachBallStones.Serialize());
+<
+      List<AchievementId> idList1 = Achievement.AchievementsToIdList(this.TrainingAchievements);Conv.AppendList<AchievementId>(builder, idList1, "y");
+>
+"list" this..
+>
+      Conv.AppendValue(builder, "a", this.IsReached.ToString());
+      Conv.AppendValue(builder, "b", this.Id);
+<<
+      List<AchievementId> idList2 = Achievement.AchievementsToIdList(this.SkillAchievements);Conv.AppendList<AchievementId>(builder, idList2, "z");
+>
+"list" this..
+>
+      Conv.AppendValue(builder, "a", this.IsReached.ToString());
+      Conv.AppendValue(builder, "b", this.Id);
+<<
+      List<AchievementId> idList3 = Achievement.AchievementsToIdList(this.FightingAchievements);Conv.AppendList<AchievementId>(builder, idList3, "A");
+>
+"list" this..
+>
+      Conv.AppendValue(builder, "a", this.IsReached.ToString());
+      Conv.AppendValue(builder, "b", this.Id);
+<<
+      List<AchievementId> idList4 = Achievement.AchievementsToIdList(this.CreatingAchievements);Conv.AppendList<AchievementId>(builder, idList4, "B");
+>
+"list" this..
+>
+      Conv.AppendValue(builder, "a", this.IsReached.ToString());
+      Conv.AppendValue(builder, "b", this.Id);
+<<
+      Conv.AppendValue(builder, "C", this.IsMonumentUnlocked.ToString());
+      Conv.AppendList<Monument>(builder, this.AllMonuments, "D");
+>
+"list" this.Monument.
+>
+      Conv.AppendValue(builder, "a", this.EnumValue);
+      Conv.AppendValue(builder, "b", this.Level.Serialize());
+      Conv.AppendValue(builder, "c", this.ShadowCloneCount.Serialize());
+      Conv.AppendValue(builder, "d", this.CurrentDuration);
+      Conv.AppendValue(builder, "e", this.Upgrade.Serialize());
+>
+      Conv.AppendValue(builder, "a", this.EnumValue);
+      Conv.AppendValue(builder, "b", this.Level.Serialize());
+      Conv.AppendValue(builder, "c", this.ShadowCloneCount.Serialize());
+      Conv.AppendValue(builder, "d", this.CurrentDuration);
+      Conv.AppendValue(builder, "e", this.IsPaid.ToString());
+      Conv.AppendValue(builder, "f", this.NextAt);
+<
+      Conv.AppendValue(builder, "f", this.IsPaid.ToString());
+      Conv.AppendValue(builder, "g", this.NextAt.ToString());
+<<
+      Conv.AppendValue(builder, "E", this.isBuyUnlocked.ToString());
+      Conv.AppendValue(builder, "F", this.PhysicalPowerBase.Serialize());
+      Conv.AppendValue(builder, "G", this.MysticPowerBase.Serialize());
+      Conv.AppendValue(builder, "H", this.BattlePowerBase.Serialize());
+      Conv.AppendValue(builder, "I", this.CreatingPowerBase.Serialize());
+      Conv.AppendValue(builder, "J", this.IsUpgradeUnlocked.ToString());
+      Conv.AppendValue(builder, "K", this.Generator.Serialize());
+>
+	Conv.AppendValue(builder, "a", this.EnumValue);
+      Conv.AppendValue(builder, "b", this.Level.Serialize());
+      Conv.AppendValue(builder, "c", this.ShadowCloneCount.Serialize());
+      Conv.AppendValue(builder, "d", this.CurrentDuration);
+      Conv.AppendValue(builder, "e", this.IsAvailable.ToString());
+      Conv.AppendValue(builder, "f", this.IsBuilt.ToString());
+      Conv.AppendValue(builder, "g", this.FilledCapacity.Serialize());
+      Conv.AppendValue(builder, "k", this.TotalMoneyGenerated.Serialize());
+      Conv.AppendList<GeneratorUpgrade>(builder, this.Upgrades, "l");
+>
+"list" this..
+>
+      Conv.AppendValue(builder, "a", this.EnumValue);
+      Conv.AppendValue(builder, "b", this.Level.Serialize());
+      Conv.AppendValue(builder, "c", this.ShadowCloneCount.Serialize());
+      Conv.AppendValue(builder, "d", this.CurrentDuration);
+      Conv.AppendValue(builder, "e", this.IsPaid.ToString());
+      Conv.AppendValue(builder, "f", this.NextAt.ToString());
+<<
+      Conv.AppendValue(builder, "m", this.IsPaid.ToString());
+      Conv.AppendValue(builder, "n", this.FilledStones.Serialize());
+<
+      Conv.AppendValue(builder, "N", this.TitleGod);
+      Conv.AppendValue(builder, "O", this.GameSettings.Serialize());
+      Conv.AppendValue(builder, "P", this.PrinnyBaal.Serialize());
+      Conv.AppendValue(builder, "Q", this.Avatar.Serialize());
+      Conv.AppendValue(builder, "S", this.Crits.Serialize());
+      Conv.AppendValue(builder, "T", this.HomePlanet.Serialize());
+      Conv.AppendValue(builder, "U", this.CreatingSpeedBoniDuration);
+      Conv.AppendList<Might>(builder, this.AllMights, "V");
+      Conv.AppendValue(builder, "W", this.AvatarName);
+      Conv.AppendValue(builder, "X", this.Ext.Serialize());
+      Conv.AppendValue(builder, "Y", this.IsBlackListed.ToString());
+      Conv.AppendValue(builder, "Z", this.IsSocialDialogShown.ToString());
+      Conv.AppendValue(builder, NS.n1.Nr(), this.SteamId);
+      Conv.AppendValue(builder, NS.n2.Nr(), this.SteamName);
+      Conv.AppendValue(builder, NS.n3.Nr(), this.AndroidId);
+      Conv.AppendValue(builder, NS.n4.Nr(), this.AndroidName);
+      Conv.AppendValue(builder, NS.n5.Nr(), this.TimeStampGameClosedOfflineMS);
+      Conv.AppendValue(builder, NS.n6.Nr(), this.Logging);
+      Conv.AppendValue(builder, NS.n7.Nr(), this.ApeCampaigns);
+      Conv.AppendValue(builder, NS.n8.Nr(), this.PandoraFeedings);
+      Conv.AppendValue(builder, NS.n9.Nr(), this.SpaceDim.Serialize());
+      Conv.AppendValue(builder, NS.n10.Nr(), this.PatreonTier.Serialize());
+      Conv.AppendValue(builder, NS.n11.Nr(), this.ChickenGodReached);
+      Conv.AppendValue(builder, NS.n12.Nr(), this.UBV4Battle.Serialize());
+      Conv.AppendValue(builder, NS.n13.Nr(), this.OverflowBoost.Serialize());

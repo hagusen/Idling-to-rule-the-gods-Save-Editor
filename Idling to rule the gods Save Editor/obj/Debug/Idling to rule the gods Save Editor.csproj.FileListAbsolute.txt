@@ -1,0 +1,14 @@
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\obj\Debug\Idling_to_rule_the_gods_Save_Editor.Form1.resources
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\obj\Debug\Idling_to_rule_the_gods_Save_Editor.Properties.Resources.resources
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\obj\Debug\Idling to rule the gods Save Editor.csproj.GenerateResource.cache
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\obj\Debug\Idling to rule the gods Save Editor.csproj.CoreCompileInputs.cache
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\bin\Debug\Idling to rule the gods Save Editor.exe.config
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\bin\Debug\Idling to rule the gods Save Editor.exe
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\bin\Debug\Idling to rule the gods Save Editor.pdb
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\obj\Debug\Idling to rule the gods Save Editor.exe
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\obj\Debug\Idling to rule the gods Save Editor.pdb
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\obj\Debug\Idling to rule the gods Save Editor.csprojAssemblyReference.cache
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\bin\Debug\ObjectListView.dll
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\bin\Debug\ObjectListView.pdb
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\bin\Debug\ObjectListView.xml
+C:\Users\jabja\source\repos\Idling to rule the gods Save Editor\Idling to rule the gods Save Editor\obj\Debug\Idling to rule the gods Save Editor.csproj.CopyComplete
