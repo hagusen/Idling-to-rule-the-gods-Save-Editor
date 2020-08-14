@@ -295,7 +295,7 @@ namespace Idling_to_rule_the_gods_Save_Editor {
 
             public Node(string name, string value) {
                 this.Name = name;
-                this.value = value;
+
                 this.Children = new List<Node>();
             }
         }
@@ -363,6 +363,8 @@ namespace Idling_to_rule_the_gods_Save_Editor {
 
             var value = new BrightIdeasSoftware.OLVColumn("Value", "Value");
             value.AspectGetter = x => (x as Node).value;
+            value.CellEditUseWholeCell = true;
+            value.CellPadding = new Rectangle(0,0,0,0);
             //data.value = value;
 
             var prefix = new BrightIdeasSoftware.OLVColumn("prefix", "prefix");
@@ -536,15 +538,14 @@ namespace Idling_to_rule_the_gods_Save_Editor {
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) {
 
         }
-
+        /*
         private void objlv_CellEditStarting(object sender, CellEditEventArgs e) {
             //e.Column.AspectName gives the model column name of the editing column
 
             if (e.Column.AspectName == "DoubleValue") {
-                NumericUpDown nud = new NumericUpDown();
-                nud.MinValue = 0.0;
-                nud.MaxValue = 1000.0;
-                nud.Value = (double)e.Value;
+
+                TextBox nud = new TextBox();
+                nud.Text = e.Value;//
                 e.Control = nud;
             }
         }
@@ -556,7 +557,9 @@ namespace Idling_to_rule_the_gods_Save_Editor {
                     e.Cancel = true;
             }
         }
+        */
+        private void textBox1_TextChanged(object sender, EventArgs e) {
 
-
+        }
     }
 }

@@ -8,3 +8,13 @@ C:\Users\jabja\Downloads\ObjectListView-2.9.1\ObjectListView\ObjectListView\obj\
 C:\Users\jabja\Downloads\ObjectListView-2.9.1\ObjectListView\ObjectListView\obj\Debug\ObjectListView2012.csproj.CoreCompileInputs.cache
 C:\Users\jabja\Downloads\ObjectListView-2.9.1\ObjectListView\ObjectListView\obj\Debug\ObjectListView.dll
 C:\Users\jabja\Downloads\ObjectListView-2.9.1\ObjectListView\ObjectListView\obj\Debug\ObjectListView.pdb
+C:\Users\Hagusen\Documents\GitHub\Idling-to-rule-the-gods-Save-Editor\Idling to rule the gods Save Editor\ObjectListView\ObjectListView\bin\Debug\ObjectListView.XML
+C:\Users\Hagusen\Documents\GitHub\Idling-to-rule-the-gods-Save-Editor\Idling to rule the gods Save Editor\ObjectListView\ObjectListView\bin\Debug\ObjectListView.dll
+C:\Users\Hagusen\Documents\GitHub\Idling-to-rule-the-gods-Save-Editor\Idling to rule the gods Save Editor\ObjectListView\ObjectListView\bin\Debug\ObjectListView.pdb
+C:\Users\Hagusen\Documents\GitHub\Idling-to-rule-the-gods-Save-Editor\Idling to rule the gods Save Editor\ObjectListView\ObjectListView\obj\Debug\ObjectListView2012.csprojAssemblyReference.cache
+C:\Users\Hagusen\Documents\GitHub\Idling-to-rule-the-gods-Save-Editor\Idling to rule the gods Save Editor\ObjectListView\ObjectListView\obj\Debug\BrightIdeasSoftware.Properties.Resources.resources
+C:\Users\Hagusen\Documents\GitHub\Idling-to-rule-the-gods-Save-Editor\Idling to rule the gods Save Editor\ObjectListView\ObjectListView\obj\Debug\BrightIdeasSoftware.ColumnSelectionForm.resources
+C:\Users\Hagusen\Documents\GitHub\Idling-to-rule-the-gods-Save-Editor\Idling to rule the gods Save Editor\ObjectListView\ObjectListView\obj\Debug\ObjectListView2012.csproj.GenerateResource.cache
+C:\Users\Hagusen\Documents\GitHub\Idling-to-rule-the-gods-Save-Editor\Idling to rule the gods Save Editor\ObjectListView\ObjectListView\obj\Debug\ObjectListView2012.csproj.CoreCompileInputs.cache
+C:\Users\Hagusen\Documents\GitHub\Idling-to-rule-the-gods-Save-Editor\Idling to rule the gods Save Editor\ObjectListView\ObjectListView\obj\Debug\ObjectListView.dll
+C:\Users\Hagusen\Documents\GitHub\Idling-to-rule-the-gods-Save-Editor\Idling to rule the gods Save Editor\ObjectListView\ObjectListView\obj\Debug\ObjectListView.pdb
