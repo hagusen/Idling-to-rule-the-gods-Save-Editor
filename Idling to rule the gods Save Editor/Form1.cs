@@ -293,9 +293,8 @@ namespace Idling_to_rule_the_gods_Save_Editor {
             public string prefix { get; set; }
             public List<Node> Children { get; set; }
 
-            public Node(string name, string value) {
+            public Node(string name) {
                 this.Name = name;
-
                 this.Children = new List<Node>();
             }
         }
@@ -360,18 +359,24 @@ namespace Idling_to_rule_the_gods_Save_Editor {
             // create the tree columns and set the delegates to print the desired object proerty
             var nameCol = new BrightIdeasSoftware.OLVColumn("Name", "Name");
             nameCol.AspectGetter = x => (x as Node).Name;
+            nameCol.IsEditable = false;
 
             var value = new BrightIdeasSoftware.OLVColumn("Value", "Value");
             value.AspectGetter = x => (x as Node).value;
-            value.CellEditUseWholeCell = true;
-            value.CellPadding = new Rectangle(0,0,0,0);
+            value.AspectPutter = delegate(object x, object newValue) {
+
+                (x as Node).value = (string)newValue;
+
+            };
+
+
             //data.value = value;
 
             var prefix = new BrightIdeasSoftware.OLVColumn("prefix", "prefix");
             prefix.AspectGetter = x => (x as Node).prefix;
+            prefix.IsEditable = false;
 
-
-            value.IsEditable = true;
+            //value.IsEditable = true;
             // add the columns to the tree
             this.treeListView1.Columns.Add(nameCol);
             this.treeListView1.Columns.Add(value);
@@ -391,7 +396,8 @@ namespace Idling_to_rule_the_gods_Save_Editor {
             for (int i = 0; i < s.Length - 1; i++) {
 
                 //create new node
-                Node tempNode = new Node("test", "-------");
+                Node tempNode = new Node("test");
+                tempNode.value = "-------";
 
                 //remove and save prefix
                 tempNode.prefix = s[i].Substring(0, s[i].IndexOf(":") + 1);
@@ -405,7 +411,8 @@ namespace Idling_to_rule_the_gods_Save_Editor {
 
                         for (int t = 0; t < elements.Length - 1; t++) {
                             if (!string.IsNullOrEmpty(elements[t])) {
-                                Node n = new Node("coll", " ");
+                                Node n = new Node("coll");
+                                n.value = " ";
                                 n.Children = Decode(StringPartsFromBase64(elements[t]));
                                 n.prefix = "list:"; // change later
                                 temp2.Add(n);
