@@ -24,9 +24,9 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Node1");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Premium", new System.Windows.Forms.TreeNode[] {
-            treeNode5});
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Node1");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Premium", new System.Windows.Forms.TreeNode[] {
+            treeNode7});
             this.inputTextBox = new System.Windows.Forms.RichTextBox();
             this.decodeButton = new System.Windows.Forms.Button();
             this.treeView1 = new System.Windows.Forms.TreeView();
@@ -35,7 +35,6 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.treeListView1 = new BrightIdeasSoftware.TreeListView();
-            this.olvColumn2 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.treeListView1)).BeginInit();
@@ -63,15 +62,15 @@
             // 
             this.treeView1.Location = new System.Drawing.Point(31, 28);
             this.treeView1.Name = "treeView1";
-            treeNode5.Name = "Node1";
-            treeNode5.Tag = "rytryetryery";
-            treeNode5.Text = "Node1";
-            treeNode6.Name = "Premium";
-            treeNode6.SelectedImageIndex = -2;
-            treeNode6.Tag = "tyjtutyuty";
-            treeNode6.Text = "Premium";
+            treeNode7.Name = "Node1";
+            treeNode7.Tag = "rytryetryery";
+            treeNode7.Text = "Node1";
+            treeNode8.Name = "Premium";
+            treeNode8.SelectedImageIndex = -2;
+            treeNode8.Tag = "tyjtutyuty";
+            treeNode8.Text = "Premium";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode6});
+            treeNode8});
             this.treeView1.Size = new System.Drawing.Size(143, 76);
             this.treeView1.TabIndex = 2;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -111,10 +110,7 @@
             // 
             // treeListView1
             // 
-            this.treeListView1.AllColumns.Add(this.olvColumn2);
             this.treeListView1.CellEditUseWholeCell = false;
-            this.treeListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.olvColumn2});
             this.treeListView1.Cursor = System.Windows.Forms.Cursors.Default;
             this.treeListView1.HideSelection = false;
             this.treeListView1.Location = new System.Drawing.Point(580, 12);
@@ -160,7 +156,6 @@
         private BrightIdeasSoftware.TreeListView treeListView1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.TextBox textBox1;
-        private BrightIdeasSoftware.OLVColumn olvColumn2;
     }
 }
 

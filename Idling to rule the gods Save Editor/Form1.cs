@@ -257,6 +257,7 @@ namespace Idling_to_rule_the_gods_Save_Editor {
 
 
             FillTree(ssss);
+            treeListView1.CellEditStarting += objlv_CellEditStarting;
 
             this.treeListView1.AutoResizeColumns();
 
@@ -381,7 +382,6 @@ namespace Idling_to_rule_the_gods_Save_Editor {
             this.treeListView1.Columns.Add(nameCol);
             this.treeListView1.Columns.Add(value);
             this.treeListView1.Columns.Add(prefix);
-
             // set the tree roots
             this.treeListView1.Roots = data;
         }
@@ -545,18 +545,13 @@ namespace Idling_to_rule_the_gods_Save_Editor {
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) {
 
         }
-        /*
+        
         private void objlv_CellEditStarting(object sender, CellEditEventArgs e) {
             //e.Column.AspectName gives the model column name of the editing column
 
-            if (e.Column.AspectName == "DoubleValue") {
-
-                TextBox nud = new TextBox();
-                nud.Text = e.Value;//
-                e.Control = nud;
-            }
+            e.Control.Bounds = e.CellBounds;
         }
-
+        /*
         private void objlv_CellEditFinishing(object sender, CellEditEventArgs e) {
             if (e.Column.AspectName == "Value") {
                 //Here you can verify data, if the data is wrong, call
