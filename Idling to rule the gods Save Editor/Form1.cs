@@ -105,8 +105,7 @@ namespace Idling_to_rule_the_gods_Save_Editor {
         }
 
 
-
-
+ 
         private void Stuff() {
 
             this.MaximizeBox = false;
