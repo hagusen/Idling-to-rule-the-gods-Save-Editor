@@ -471,3 +471,4 @@ Conv.AppendValue(builder, "a", this.ElementalChallenges.SerializeRounded());
       Conv.AppendValue(builder, NS.n11.Nr(), this.ChickenGodReached);
       Conv.AppendValue(builder, NS.n12.Nr(), this.UBV4Battle.Serialize());
       Conv.AppendValue(builder, NS.n13.Nr(), this.OverflowBoost.Serialize());
+      Conv.AppendValue(builder, NS.n14.Nr(), this.RTI.Serialize());
